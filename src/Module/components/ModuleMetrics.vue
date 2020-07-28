@@ -1,8 +1,7 @@
-<!-- Project Info-->
 <template>
 <v-form>
-  <v-container class="module-projectinfo">
-    <div class="module-projectinfo__container">
+  <v-container class="module-metrics">
+    <div class="module-metrics__container">
       <div class="text-center row font-weight-medium mr-auto ml-auto justify-center">
         Now that you have an idea for your project and what you are going to
         prototype, you have to prepare for Hack Day! This is a workshop to kick of
@@ -42,7 +41,7 @@ import Vue from 'vue';
 import gql from 'graphql-tag';
 
 export default Vue.extend({
-  name: 'ModuleProjectInfo',
+  name: 'ModuleMetrics',
   apollo: {
   },
   data: () => ({

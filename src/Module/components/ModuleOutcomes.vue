@@ -1,7 +1,6 @@
-<!--  Cons -->
 <template>
-  <v-container class="module-cons">
-    <div class="module-cons__container">
+  <v-container class="module-settings">
+    <div class="module-settings__container">
       <div class="text-center row font-weight-medium mr-auto ml-auto justify-center">
         Now that you have filled out the Pros for your project a list of Cons
         or obstacles that you might encounter throughout this project
@@ -25,7 +24,7 @@ import Vue from 'vue';
 // import gql from 'graphql-tag';
 
 export default Vue.extend({
-  name: 'ModuleCons',
+  name: 'ModuleSettings',
   apollo: {
   },
   data: () => ({

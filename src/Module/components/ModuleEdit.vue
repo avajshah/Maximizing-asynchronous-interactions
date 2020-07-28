@@ -1,7 +1,6 @@
-<!-- Future Ideas -->
 <template>
-<v-container class="module-futureideas">
-  <div class="module-futureideas__container">
+<v-container class="module-edit">
+  <div class="module-edit__container">
     <div class="text-center row font-weight-medium mr-auto ml-auto justify-center">
         One last step! Write down some future ideas (long run goals) you and your team are planning
         to achieve and some ways you are planning to meet them
@@ -25,7 +24,7 @@ import Vue from 'vue';
 // import gql from 'graphql-tag';
 
 export default Vue.extend({
-  name: 'ModuleFutureIdeas',
+  name: 'ModuleEdit',
   apollo: {
   },
   data: () => ({

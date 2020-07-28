@@ -46,15 +46,15 @@ import * as Module from './components';
 export default Vue.extend({
   name: 'Microapp',
   components: {
-    'module-Pros': Module.Pros,
-    'module-projectinfo': Module.ProjectInfo,
-    'module-futureideas': Module.FutureIdeas,
-    'module-cons': Module.Cons,
+    'module-instruct': Module.Instruct,
+    'module-metrics': Module.Metrics,
+    'module-edit': Module.Edit,
+    'module-settings': Module.Settings,
     'module-preview': Module.Default,
   },
   data: () => ({
     moduleName: 'Hack Day',
-    pages: ['ProjectInfo', 'Pros', 'Cons', 'FutureIdeas', 'Preview'],
+    pages: ['Metrics', 'Instruct', 'Settings', 'Edit', 'Preview'],
     currentPage: 'ProjectInfo',
   }),
   computed: {
