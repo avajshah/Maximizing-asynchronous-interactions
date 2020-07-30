@@ -1,20 +1,31 @@
+<!--settings-->
 <template>
   <v-container class="module-settings">
     <div class="module-settings__container">
-      <div class="text-center row font-weight-medium mr-auto ml-auto justify-center">
-        Now that you have filled out the Pros for your project a list of Cons
-        or obstacles that you might encounter throughout this project
+      <div class="text-center row font-weight-bold mr-auto ml-auto justify-center">
+        Minimum amount of connections and follows made with laison media.
       </div>
-      <div class="col py-3 px-md-5 bordered col-example"></div>
-      <p class="font-weight-bold text-md-h6 d-flex align-end">List of Cons</p>
-      <v-col cols="20" sm="20">
-          <v-textarea
-            hint="It is preferable to create a bullet point list"
-            outlined
-            full-width
-            single-line
-          ></v-textarea>
-        </v-col>
+      <!--Dropdown-->
+      <div class="text-center row justify-center">
+      <v-col class="d-flex" cols="6">
+        <v-select
+          :items="items"
+          label="Connections"
+        ></v-select>
+      </v-col>
+      </div>
+        <div class="text-center row font-weight-bold justify-center">
+          Desired amount of connections and follows suggested by laison
+        </div>
+      <!--Dropdown-->
+      <div class="text-center row justify-center">
+      <v-col class="d-flex" cols="6">
+        <v-select
+          :items="items"
+          label="Connections"
+        ></v-select>
+      </v-col>
+      </div>
     </div>
   </v-container>
 </template>
@@ -28,6 +39,7 @@ export default Vue.extend({
   apollo: {
   },
   data: () => ({
+    items: ['1', '2', '3', '4'],
   }),
 });
 </script>
